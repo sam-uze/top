@@ -13,8 +13,8 @@
 <body>
     <header>
         <figure>
-            <!---->
-            <img src="images/flower.jpg" alt="Header Bild">
+            <!--Quelle: https://pixabay.com/de/photos/jungfrauenturm-sonnenuntergang-7058791/-->
+            <img src="images/istanbul_header.jpg" alt="Header Bild">
             <a href="https://github.com/sam-uze"><img src="images/cluster-Bluete.jpg" alt="Eine Blume" /></a>
         </figure>
     </header>
@@ -27,9 +27,9 @@
         <p>Das Stadtbild ist von Bauten der griechisch-römischen Antike, des mittelalterlichen Byzanz sowie der neuzeitlichen und modernen Türkei geprägt. Paläste gehören ebenso dazu wie zahlreiche Moscheen, Cemevleri, Kirchen und Synagogen. Aufgrund ihrer Einzigartigkeit wurden Teile der historischen Altstadt von der UNESCO zum Weltkulturerbe erklärt. 2010 war Istanbul Kulturhauptstadt Europas.</p>
         <a href="https://de.wikipedia.org/wiki/Istanbul">Quelle: Wikipedia</a>
         <figure>
-            <img src="images/attraction.jpg" alt="Blick auf Meer">
-            <!-- Bild von https://pixabay.com/de/photos/neuseeland-napier-bluff-hill-lookout-3679340/ -->
-            <figcaption>Meeresbilck aufgenommen in der Nähe von Napier (Quelle: <a href="https://pixabay.com/de/photos/neuseeland-napier-bluff-hill-lookout-3679340/">Pixabay</a>)</figcaption>
+            <img src="images/istanbul-attraction.jpg" alt="Blick auf Istanbul">
+            <!-- Bild von https://pixabay.com/de/photos/istanbul-galata-turm-stadt-truthahn-4307665/ -->
+            <figcaption>Blick auf Istanbul (Quelle: <a href="https://pixabay.com/de/photos/istanbul-galata-turm-stadt-truthahn-4307665/">Pixabay</a>)</figcaption>
         </figure>
 
         <h3>Übersichtskarte</h3>
@@ -37,27 +37,26 @@
 
         <h3>Links</h3>
         <ul>
-            <li><a href="https://www.napier.govt.nz/">Website der Stadt Napier</a></li>
-            <li><a href="https://www.newzealand.com/de/napier/">Website Neuseeland</a></li>
-            <li><a href="https://www.stats.govt.nz/tools/2018-census-place-summaries/napier-city">Zensusdaten Napier</a></li>
+            <li><a href="https://istanbul-tourist-information.com/">Website der Tourist Information Istanbul</a></li>
+            <li><a href="https://www.wetter.com/wetter_aktuell/wettervorhersage/16_tagesvorhersage/tuerkei/istanbul/TR0IB0001.html">Wetter Istanbul</a></li>
         </ul>
     </main>
 
     <footer>
         <nav>
-            <a href="https://johannauniibk.github.io/nz/">vorhergehende Etappe</a>
-            <a href="https://sam-uze.github.io/nz/">diese Etappe</a>
-            <a href="https://webmapping.github.io/nz/">nächste Etappe</a>
+            <a href="https://johannauniibk.github.io/top/">vorhergehende Etappe</a>
+            <a href="https://sam-uze.github.io/top/">diese Etappe</a>
+            <a href="https://webmapping.github.io/top/">nächste Etappe</a>
         </nav>
     </footer>
 
     <script>
-        var map = L.map('map').setView([-39.48, 176.90], 13);
+        var map = L.map('map').setView([41.01, 28.96], 13);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-        var marker = L.marker([-39.48, 176.90]).addTo(map);
+        var marker = L.marker([41.01, 28.96]).addTo(map);
         marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
 
     </script>
