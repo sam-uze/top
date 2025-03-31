@@ -9,4 +9,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 let marker = L.marker([41.01, 28.96]).addTo(map);
-marker.bindPopup("<b>Istanbul</b><br>City Center").openPopup();
+marker.bindPopup(`
+    <b>Istanbul</b>
+    <br>
+    City Center
+ `).openPopup();
