@@ -10,7 +10,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 let marker = L.marker([41.01, 28.96]).addTo(map);
 marker.bindPopup(`
-    <b>Istanbul</b>
-    <br>
-    City Center
- `).openPopup();
+    <h2>Istanbul</h2>
+    <ul>
+        <li>geogr. Breite: ${lat.toFixed(5)}</li>
+        <li>geogr. Länge: ${lng.toFixed(5)}</li>
+    </ul>
+`).openPopup();
