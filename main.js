@@ -109,11 +109,11 @@ const STOPS = [
     },
     {
         nr: 13,
-        title: "Pancake rocks (Punakaiki)",
+        title: "Buenos Aires",
         user: "johaschra",
-        lat: -42.114383,
-        lng: 171.327320,
-        zoom: 11,
+        lat: -34.603486,
+        lng: -58.381639,
+        zoom: 13,
     },
     {
         nr: 16,
@@ -141,7 +141,7 @@ const STOPS = [
     },
     {
         nr: 20,
-        title: "Lieblingsort der Webmapperin: Singapur",
+        title: "Singapur",
         user: "florentinebusch",
         lat: 1.283333,
         lng: 103.833333,
@@ -187,7 +187,7 @@ const STOPS = [
         lat: 49.31,
         lng: 8.08,
     },
-    {  
+    {   
         nr: 29,
         title: 'Utrecht',
         user: 'jessimeteo',
