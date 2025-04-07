@@ -202,10 +202,19 @@ console.log(STOPS[0].title);
 
 // Initialize the map and set its view to the specified location and zoom level
 let map = L.map('map');
+
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+//Maßstab definieren
+L.control.scale({
+    imperial: false,
+}).addTo(map);
+
+//For loop über alle Stops
+// und Marker setzen
 for ( let i=0; i<STOPS.length; i++){
     console.log(i,STOPS[i],STOPS[i].title);
     let marker = L.marker([STOPS[i].lat, STOPS[i].lng]).addTo(map);
