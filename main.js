@@ -203,11 +203,6 @@ console.log(STOPS[0].title);
 // Initialize the map and set its view to the specified location and zoom level
 let map = L.map('map');
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-
 //Overlays definieren
 let overlays = {
     places: L.featureGroup().addTo(map),
